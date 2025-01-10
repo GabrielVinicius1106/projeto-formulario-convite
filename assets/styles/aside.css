@@ -1,0 +1,29 @@
+.brand {
+  background-image: url(../imgs/Background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  border-radius: 24px;
+
+  height: 100vh;
+
+  .aside-title {
+    padding: 6rem;
+
+    img {
+      width: 4rem;
+    }
+
+    h1 {
+      font: var(--logo);
+      line-height: .75;
+      color: var(--pink);
+    }
+  
+    p {
+      font: var(--body-md-light);
+      line-height: .25;
+      color: var(--text-heading);
+    }
+  }
+}

@@ -45,22 +45,31 @@
   --open-sans: "Open Sans", serif;
 
   /* Variáveis de Texto - Leckerli One*/
-  --logo: 400 40px/auto var(--leckerli);
+  --logo: 400 52px var(--leckerli);
 
   /* Variáveis de Texto - Baloo 2*/
-  --heading-md: 700 28px/auto var(--baloo);
-  --heading-sm: 700 18px/auto var(--baloo);
+  --heading-md: 700 28px var(--baloo);
+  --heading-sm: 700 18px var(--baloo);
 
   /* Variáveis de Texto - Open Sans*/
-  --body-md-light: 300 16px/auto var(--open-sans);
-  --body-md: 400 16px/auto var(--open-sans);
-  --body-md-semibold: 600 16px/auto var(--open-sans);
+  --body-md-light: 300 24px var(--open-sans);
+  --body-md: 400 16px var(--open-sans);
+  --body-md-semibold: 600 16px var(--open-sans);
 
-  --body-sm: 400 14px/auto var(--open-sans);
-  --body-sm-semibold: 600 14px/auto var(--open-sans);
+  --body-sm: 400 14px var(--open-sans);
+  --body-sm-semibold: 600 14px var(--open-sans);
 
-  --body-xs: 400 12px/auto var(--open-sans);
-  --body-xs: 600 12px/auto var(--open-sans);
+  --body-xs: 400 12px var(--open-sans);
+  --body-xs: 600 12px var(--open-sans);
 
 }
 
+body {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+
+  padding: 24px;
+  overflow: hidden;
+
+  background-color: var(--shape-background);
+}
