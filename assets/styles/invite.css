@@ -1,15 +1,105 @@
 .invite { 
   background-color: var(--shape-body);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
+
+  padding-block: 80px;
 
   display: flex;
   flex-direction: column;
-
-
+  align-items: center;
+  height: 90vh;
+  width: 51.25rem;
+  /* overflow: scroll; */
   
+  .invite-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    width: 35rem;
+  }
   
-  fieldset {
+  h1 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+  }
+
+  .field-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
     border: none;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .legend-wrapper {
+
+      legend {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+  
+        font: var(--heading-sm);
+        color: var(--text-heading);
+
+        img {
+          width: 24px;
+        }
+      } 
+    }
+
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      label {
+        font: var(--body-sm);
+        color: var(--text-body);
+      }
+
+      input {
+        appearance: none;
+        padding: 16px;
+        border: 1px solid var(--input-stroke);
+        border-radius: 8px;
+        background-color: var(--input-base);
+
+        height: 3rem;
+        width: 100%;
+
+        &::placeholder {
+          font: var(--body-md);
+          color: var(--input-placeholder);
+        }
+  
+        &:focus {
+          outline: 1px solid var(--brand-light);
+          color: var(--text-heading);
+        }
+
+        &[type="datetime-local"]{
+          color: var(--input-placeholder);
+          
+          &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+          }
+        }
+      }
+
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  
   }
 
 }
