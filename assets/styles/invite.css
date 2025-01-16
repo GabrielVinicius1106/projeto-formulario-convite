@@ -131,6 +131,25 @@
         }
       }
 
+      .type {
+        display: flex;
+        justify-content: space-between;
+
+        padding-inline: 12px;
+        
+        border: 1px solid var(--input-stroke);
+        border-radius: 8px;
+        background-color: var(--input-base);
+
+        .option {
+          border-radius: 8px;
+          background-color: var(--text-heading);
+
+          display: flex;
+          gap: 8px;
+        }
+      }
+
     }
 
     .grid {
