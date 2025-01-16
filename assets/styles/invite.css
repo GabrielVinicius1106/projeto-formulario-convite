@@ -58,6 +58,35 @@
       flex-direction: column;
       gap: 12px;
 
+      &:has(:invalid) {
+        .error {
+          display: flex;
+          align-items: center;
+          gap: .5rem;
+    
+          img {
+            width: 1rem;
+          }
+    
+          span {
+            font: var(--body-xs);
+            color: var(--danger);
+          }
+        }
+      }
+
+      &:has(:valid) {
+        .error {
+          display: none;
+        }
+      }
+
+      &:has(:focus-within) {
+        .error {
+          display: none;
+        }
+      }
+
       label {
         font: var(--body-sm);
         color: var(--text-body);
@@ -92,21 +121,6 @@
         }
       }
 
-    }
-
-    .error {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-
-      img {
-        width: 1rem;
-      }
-
-      span {
-        font: var(--body-xs);
-        color: var(--danger);
-      }
     }
 
     .grid {
