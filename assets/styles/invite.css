@@ -94,6 +94,21 @@
 
     }
 
+    .error {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+
+      img {
+        width: 1rem;
+      }
+
+      span {
+        font: var(--body-xs);
+        color: var(--danger);
+      }
+    }
+
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;

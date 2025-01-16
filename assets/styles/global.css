@@ -65,7 +65,7 @@ body {
   --body-sm-semibold: 600 14px var(--open-sans);
 
   --body-xs: 400 12px var(--open-sans);
-  --body-xs: 600 12px var(--open-sans);
+  --body-xs-semibold: 600 12px var(--open-sans);
 
 }
 
