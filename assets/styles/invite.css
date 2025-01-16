@@ -59,6 +59,10 @@
       gap: 12px;
 
       &:has(:invalid) {
+        input {
+          outline: 1px solid var(--danger);
+        }
+
         .error {
           display: flex;
           align-items: center;
@@ -99,6 +103,8 @@
         border-radius: 8px;
         background-color: var(--input-base);
 
+        color: var(--text-heading);
+
         height: 3rem;
         width: 100%;
 
@@ -117,6 +123,10 @@
           
           &::-webkit-calendar-picker-indicator {
             opacity: 0;
+          }
+
+          &:focus {
+            color: var(--text-heading);
           }
         }
       }
