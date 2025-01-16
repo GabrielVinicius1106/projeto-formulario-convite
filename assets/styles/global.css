@@ -1,6 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
 * {
-  border: 0%;
-  padding: 0%;
+  border: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -45,16 +50,16 @@
   --open-sans: "Open Sans", serif;
 
   /* Variáveis de Texto - Leckerli One*/
-  --logo: 400 52px var(--leckerli);
+  --logo: 400 40px var(--leckerli);
 
   /* Variáveis de Texto - Baloo 2*/
   --heading-md: 700 28px var(--baloo);
   --heading-sm: 700 18px var(--baloo);
 
   /* Variáveis de Texto - Open Sans*/
-  --body-md-light: 300 24px var(--open-sans);
-  --body-md: 400 16px var(--open-sans);
-  --body-md-semibold: 600 16px var(--open-sans);
+  --body-md-light: 300 1rem var(--open-sans);
+  --body-md: 400 1rem var(--open-sans);
+  --body-md-semibold: 600 1rem var(--open-sans);
 
   --body-sm: 400 14px var(--open-sans);
   --body-sm-semibold: 600 14px var(--open-sans);
@@ -65,10 +70,10 @@
 }
 
 body {
-  display: grid;
-  grid-template-columns: 4fr 8fr;
+  display: flex;
+  gap: 2rem;
 
-  padding: 24px;
+  padding: 3rem;
   overflow: hidden;
 
   background-color: var(--shape-background);
