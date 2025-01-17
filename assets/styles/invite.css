@@ -133,20 +133,62 @@
 
       .type {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
 
-        padding-inline: 12px;
+        width: 272px;
+        height: 48px;
         
         border: 1px solid var(--input-stroke);
         border-radius: 8px;
         background-color: var(--input-base);
 
         .option {
-          border-radius: 8px;
-          background-color: var(--text-heading);
-
           display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+
+          position: relative;
+
+          width: 130px;
+          height: 40px;
+
           gap: 8px;
+
+          font: var(--body-sm);
+          color: var(--text-body);
+
+          svg {
+            width: 24px;
+
+            path {
+              fill: var(--input-placeholder);
+            }
+          }
+
+          input[type="radio"] {
+            all: unset;
+            position: absolute;
+            inset: 0;
+          }
+        }
+
+        .option:hover {
+          cursor: pointer;
+
+          background-color: var();
+        }
+
+        .option:has(:checked) {
+          background-color: var(--input-stroke);
+          color: var(--text-heading);
+          font: var(--body-md-semibold);
+
+          svg path {
+            fill: var(--brand-light);
+          }
         }
       }
 
