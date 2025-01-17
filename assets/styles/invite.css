@@ -192,6 +192,28 @@
         }
       }
 
+      textarea {
+        width: 100%;
+        height: 136px;
+
+        color: var(--text-heading);
+        padding: 1rem;
+
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+
+        resize: none;
+
+        &::placeholder {
+          font: var(--body-md);
+        }
+      }
+
+      textarea:focus {
+        outline: 1px solid var(--brand-light);
+      }
+
     }
 
     .grid {
