@@ -295,6 +295,43 @@
       }
     }
 
+    .grid-theme {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+
+      .theme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        padding: 4px 4px 8px 4px;
+        background-color: var(--shape-button);
+
+        border-radius: .5rem;
+
+        font: var(--body-sm);
+        color: var(--text-heading);
+
+        input[type="radio"] {
+          all: unset;
+          position: absolute;
+          inset: 0;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--shape-hover);
+        }
+
+        &:has(:checked) {
+          outline: 2px solid var(--brand-light);
+        }
+      }
+
+    }
+
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
