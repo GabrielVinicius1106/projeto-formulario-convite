@@ -77,4 +77,8 @@ body {
   overflow: hidden;
 
   background-color: var(--shape-background);
+
+  label {
+    color: var(--text-body);
+  }
 }
