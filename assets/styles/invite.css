@@ -334,9 +334,105 @@
 
     }
 
+    /* ESTILIZAÇÃO DO CONTROLE DESLIZANTE - SWITCH TOGGLE */
+
+    .style-switch {
+      display: flex;
+      gap: .75rem;
+      align-items: center;
+
+      margin-top: 1rem;
+      
+      span {
+        font: var(--body-sm);
+        color: var(--text-body);
+      }
+
+      .style-text:nth-child(3){
+        visibility: hidden;
+        position: relative;
+        right: 60px;
+      }
+      
+      &:has(:checked) {
+        .style-text:nth-child(2){
+          color: var(--brand-light);
+          visibility: hidden;
+        }
+
+        .style-text:nth-child(3){
+          visibility: visible;
+        }
+      }
+    }
+
+    /* Estilizando o contêiner do switch */
+    .switch {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      width: 4rem;
+      height: 2rem;
+    }
+
+    /* Oculta o checkbox padrão */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* Estilizando a parte deslizante */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--input-base);
+      transition: .4s;
+
+      border: 1px solid var(--input-stroke);
+      border-radius: 2.125rem;
+    }
+
+    /* Criando o círculo que desliza */
+    .slider::before {
+      content: "";
+      position: absolute;
+      height: 24px;
+      width: 24px;
+      top: .2rem;
+      left: .2rem;
+      bottom: .2rem;
+      background-color: var(--input-stroke);
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    /* Quando o checkbox estiver marcado, altera o fundo */
+    input:checked + .slider {
+      background-color: var(--brand-light);
+    }
+
+    /* Move o círculo quando ativado */
+    input:checked + .slider::before {
+      transform: translateX(2rem);
+      background-color: white;
+    }
+
+
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .grid1-3 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
       gap: 1.5rem;
     }
   
