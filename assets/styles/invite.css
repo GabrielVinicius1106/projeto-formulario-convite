@@ -445,11 +445,20 @@
   
           label {
             font: var(--body-sm-semibold);
+
+            &:hover {
+              cursor: pointer;
+            }
           }
   
           svg path {
             stroke-width: 1px;
             stroke: #59B2FF;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--shape-hover);
           }
         }
 
