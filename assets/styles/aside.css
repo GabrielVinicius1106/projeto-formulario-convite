@@ -1,13 +1,13 @@
 .brand {
   background-image: url(../imgs/Background.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 
   overflow: hidden;
 
   border-radius: 1.5rem;
-  width: 25rem;
-  height: 76vh;
+  width: 30rem;
+  height: 90vh;
 
   .aside-title {
     padding: 2rem;
