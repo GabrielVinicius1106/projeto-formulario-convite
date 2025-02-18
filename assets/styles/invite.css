@@ -295,16 +295,6 @@
       }
     }
 
-    .line {
-      margin-top: 1rem;
-
-      height: 1px;
-      width: auto;
-      background-color: var(--shape-button);
-
-      border: none;
-    }
-
     .grid-theme {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -498,6 +488,64 @@
       gap: 1.5rem;
     }
   
+  }
+
+  .line {
+    margin-top: 1rem;
+
+    height: 1px;
+    width: auto;
+    background-color: var(--shape-button);
+
+    border: none;
+  }
+
+  .terms {
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-bottom: 12px;
+
+      input {
+        display: none;
+      }
+
+      label {
+        font: var(--body-xs);
+        color: var(--text-body);
+
+        strong {
+          color: var(--brand-light);
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .check {
+        width: 1.25rem;
+        height: 1.25rem;
+
+        background-image: url(../imgs/icons/checkbox.svg);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:has(:checked){
+        .check {
+          width: 1.25rem;
+          height: 1.25rem;
+  
+          background-image: url(../imgs/icons/checkbox_checked.svg);
+        }
+      }
+
+    }
   }
 
 }
