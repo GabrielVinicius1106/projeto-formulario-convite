@@ -295,6 +295,16 @@
       }
     }
 
+    .line {
+      margin-top: 1rem;
+
+      height: 1px;
+      width: auto;
+      background-color: var(--shape-button);
+
+      border: none;
+    }
+
     .grid-theme {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
